@@ -1,0 +1,19 @@
+Found 99 shards for split train
+Found 1 shards for split val
+Warming up model...
+Traceback (most recent call last):
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 398, in <module>
+    train()
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 298, in train
+    loss, _ = grad_fn(model, x_warmup, y_warmup)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 287, in loss_fn
+    output, top8_indices, top8_probs, xj_logits = model(x)
+                                                  ^^^^^^^^
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 240, in __call__
+    x, top8_indices, top8_probs, xj_logits = block(x)
+                                             ^^^^^^^^
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 211, in __call__
+    topk_probs, topk_indices = mx.top_k(routes, k=TOP_K_EXPERTS, axis=-1)
+                               ^^^^^^^^
+AttributeError: module 'mlx.core' has no attribute 'top_k'

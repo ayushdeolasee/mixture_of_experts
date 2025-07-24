@@ -1,0 +1,9 @@
+[green]found 99 shards for split train[/green]
+[green]found 1 shards for split val[/green]
+Traceback (most recent call last):
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 507, in <module>
+    train(
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 400, in train
+    for step in range(len(train_dataloader) // grad_accum_steps):
+                      ^^^^^^^^^^^^^^^^^^^^^
+TypeError: object of type 'DataLoader' has no len()

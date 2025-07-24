@@ -1,0 +1,15 @@
+{
+  "id": "pypdeveloper/moe-training",
+  "title": "moe_training",
+  "code_file": "tpu_train_mini.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "true",
+  "enable_gpu": "false",
+  "enable_tpu": "true",
+  "enable_internet": "true",
+  "dataset_sources": ["pypdeveloper/fineweb-10b-edu"],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

@@ -1,0 +1,20 @@
+[green]found 99 shards for split train[/green]
+[green]found 1 shards for split val[/green]
+Traceback (most recent call last):
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 400, in <module>
+    train(
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 323, in train
+    model = Model(vocab_size, embed_dim, max_seq_lenght, num_heads, num_experts)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 213, in __init__
+    self.blocks = [
+                  ^
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 214, in <listcomp>
+    Block(self.embed_dim, self.num_heads, self.num_experts, self.max_seq_lenght)
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 179, in __init__
+    self.router = Router(self.num_experts, self.embed_dim)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 124, in __init__
+    self.softmax = nn.Softmax(axis=-1)
+                   ^^^^^^^^^^^^^^^^^^^
+TypeError: Module.__init__() got an unexpected keyword argument 'axis'

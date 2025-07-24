@@ -1,0 +1,12 @@
+[green]found 99 shards for split train[/green]
+[green]found 1 shards for split val[/green]
+Traceback (most recent call last):
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 512, in <module>
+    train(
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 414, in train
+    loss_val, grads = loss_and_grad_fn(model, x, y)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 366, in _forward_and_loss
+    logits, topk_idx, topk_p, router_logits = model(x)
+                                              ^^^^^^^^
+TypeError: 'Model' object is not callable

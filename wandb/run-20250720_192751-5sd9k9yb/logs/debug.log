@@ -1,0 +1,46 @@
+2025-07-20 19:27:51,065 INFO    MainThread:51539 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /Users/ayushdeolasee/Developer/mixture_of_experts/wandb/run-20250720_192751-5sd9k9yb/logs/debug.log
+2025-07-20 19:27:51,065 INFO    MainThread:51539 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /Users/ayushdeolasee/Developer/mixture_of_experts/wandb/run-20250720_192751-5sd9k9yb/logs/debug-internal.log
+2025-07-20 19:27:51,065 INFO    MainThread:51539 [wandb_init.py:init():831] calling init triggers
+2025-07-20 19:27:51,065 INFO    MainThread:51539 [wandb_init.py:init():836] wandb.init called with sweep_config: {}
+config: {'batch_size': 4, 'max_seq_length': 1024, 'vocab_size': 50309, 'num_heads': 16, 'num_experts': 64, 'grad_accum_steps': 4, 'epochs': 10000, 'learning_rate': 0.0003, 'device': 'mps', 'embed_dim': 1024, 'top_k_experts': 8, 'num_blocks': 16, 'warmup_steps': 750, 'max_lr': 0.0003, 'max_steps': 10000, 'min_lr': 3e-06, '_wandb': {}}
+2025-07-20 19:29:15,390 WARNING MainThread:51539 [wandb_init.py:init():1613] [no run ID] interrupted
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/mixture_of_experts/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1609, in init
+    return wi.init(run_settings, run_config, run_printer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/mixture_of_experts/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 852, in init
+    self._wl.finish_all_active_runs()
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/mixture_of_experts/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 163, in finish_all_active_runs
+    run.finish()
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/mixture_of_experts/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/mixture_of_experts/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 436, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/mixture_of_experts/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2207, in finish
+    return self._finish(exit_code)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/mixture_of_experts/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/mixture_of_experts/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2235, in _finish
+    self._atexit_cleanup(exit_code=exit_code)
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/mixture_of_experts/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2430, in _atexit_cleanup
+    self._on_finish()
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/mixture_of_experts/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2681, in _on_finish
+    wait_with_progress(
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/mixture_of_experts/lib/python3.11/site-packages/wandb/sdk/mailbox/wait_with_progress.py", line 24, in wait_with_progress
+    return wait_all_with_progress(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/mixture_of_experts/lib/python3.11/site-packages/wandb/sdk/mailbox/wait_with_progress.py", line 87, in wait_all_with_progress
+    return asyncio_compat.run(progress_loop_with_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/mixture_of_experts/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_compat.py", line 30, in run
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/mixture_of_experts/lib/python3.11/concurrent/futures/_base.py", line 451, in result
+    self._condition.wait(timeout)
+  File "/opt/homebrew/Caskroom/miniconda/base/envs/mixture_of_experts/lib/python3.11/threading.py", line 327, in wait
+    waiter.acquire()
+KeyboardInterrupt

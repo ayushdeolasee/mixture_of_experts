@@ -1,0 +1,44 @@
+{
+  "os":  "macOS-16.0-arm64-arm-64bit",
+  "python":  "CPython 3.11.13",
+  "startedAt":  "2025-07-20T14:05:17.370506Z",
+  "program":  "/Users/ayushdeolasee/Developer/mixture_of_experts/main.ipynb",
+  "codePath":  "main.ipynb",
+  "git":  {
+    "remote":  "git@github.com:ayushdeolasee/mixture_of_experts.git",
+    "commit":  "c0544859faae2ee31b3926458af27fb969499ce2"
+  },
+  "email":  "pypdeveloper@deolasee.org",
+  "root":  "/Users/ayushdeolasee/Developer/mixture_of_experts",
+  "host":  "Ayushs-MacBook-Pro.local",
+  "executable":  "/opt/homebrew/Caskroom/miniconda/base/envs/mixture_of_experts/bin/python",
+  "codePathLocal":  "main.ipynb",
+  "cpu_count":  10,
+  "cpu_count_logical":  10,
+  "disk":  {
+    "/":  {
+      "total":  "994631127040",
+      "used":  "965187866624"
+    },
+    "/System/Volumes/Data":  {
+      "total":  "994631127040",
+      "used":  "965187866624"
+    }
+  },
+  "memory":  {
+    "total":  "34359738368"
+  },
+  "cpu":  {
+    "count":  10,
+    "countLogical":  10
+  },
+  "apple":  {
+    "name":  "Apple M1 Max",
+    "ecpuCores":  2,
+    "pcpuCores":  8,
+    "gpuCores":  32,
+    "memoryGb":  32,
+    "swapTotalBytes":  "45097156608",
+    "ramTotalBytes":  "34359738368"
+  }
+}

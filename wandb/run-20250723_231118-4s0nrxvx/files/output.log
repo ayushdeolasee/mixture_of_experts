@@ -1,0 +1,15 @@
+[green]found 99 shards for split train[/green]
+[green]found 1 shards for split val[/green]
+Traceback (most recent call last):
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 512, in <module>
+    train(
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 410, in train
+    x, y = train_dataloader.next_batch()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 76, in next_batch
+    x = (buf[:-1]).view(B, T)
+        ^^^^^^^^^^^^^^^^^^^^^
+TypeError: view(): incompatible function arguments. The following argument types are supported:
+    1. view(self, dtype: mlx.core.Dtype, *, stream: mlx.core.Stream | mlx.core.Device | None = None) -> mlx.core.array
+
+Invoked with types: mlx.core.array, int, int

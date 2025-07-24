@@ -1,0 +1,16 @@
+{
+  "os":  "macOS-26.0-arm64-arm-64bit",
+  "python":  "CPython 3.11.13",
+  "startedAt":  "2025-07-23T17:41:18.360359Z",
+  "program":  "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py",
+  "codePath":  "mps.py",
+  "git":  {
+    "remote":  "git@github.com:ayushdeolasee/mixture_of_experts.git",
+    "commit":  "c0544859faae2ee31b3926458af27fb969499ce2"
+  },
+  "email":  "pypdeveloper@deolasee.org",
+  "root":  "/Users/ayushdeolasee/Developer/mixture_of_experts",
+  "host":  "Ayushs-MacBook-Pro.local",
+  "executable":  "/opt/homebrew/Caskroom/miniconda/base/envs/mixture_of_experts/bin/python",
+  "codePathLocal":  "mps.py"
+}

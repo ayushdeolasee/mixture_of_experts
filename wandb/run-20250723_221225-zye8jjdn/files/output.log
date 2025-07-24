@@ -1,0 +1,16 @@
+[green]found 99 shards for split train[/green]
+Traceback (most recent call last):
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 399, in <module>
+    train(
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 320, in train
+    train_dataloader = DataLoader(B=batch_size, T=max_seq_lenght, split="train", data_root="./data")
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 48, in __init__
+    self.reset()
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 52, in reset
+    self.tokens = load_tokens(self.shards[self.current_shard])
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 30, in load_tokens
+    ptt = mlx.array(npt, dtype=mlx.int32)
+          ^^^^^^^^^
+AttributeError: module 'mlx' has no attribute 'array'

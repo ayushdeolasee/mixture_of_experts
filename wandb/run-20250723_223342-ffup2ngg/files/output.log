@@ -1,0 +1,20 @@
+[green]found 99 shards for split train[/green]
+[green]found 1 shards for split val[/green]
+Traceback (most recent call last):
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 399, in <module>
+    train(
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 322, in train
+    model = Model(vocab_size, embed_dim, max_seq_lenght, num_heads, num_experts)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 212, in __init__
+    self.blocks = [
+                  ^
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 213, in <listcomp>
+    Block(self.embed_dim, self.num_heads, self.num_experts, self.max_seq_lenght)
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 177, in __init__
+    self.attn = CausalSelfAttention(self.embed_dim, self.num_heads, self.max_seq_lenght)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 139, in __init__
+    self.alpha = nn.Parameter(mx.ones(self.n_head))
+                 ^^^^^^^^^^^^
+AttributeError: module 'mlx.nn' has no attribute 'Parameter'

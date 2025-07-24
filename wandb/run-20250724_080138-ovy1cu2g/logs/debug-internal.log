@@ -1,0 +1,15 @@
+{"time":"2025-07-24T08:01:39.050916+05:30","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/Users/ayushdeolasee/Developer/mixture_of_experts/wandb/run-20250724_080138-ovy1cu2g/logs/debug-core.log"}
+{"time":"2025-07-24T08:01:39.487607+05:30","level":"INFO","msg":"stream: created new stream","id":"ovy1cu2g"}
+{"time":"2025-07-24T08:01:39.487649+05:30","level":"INFO","msg":"stream: started","id":"ovy1cu2g"}
+{"time":"2025-07-24T08:01:39.487662+05:30","level":"INFO","msg":"handler: started","stream_id":"ovy1cu2g"}
+{"time":"2025-07-24T08:01:39.487686+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"ovy1cu2g"}
+{"time":"2025-07-24T08:01:39.487674+05:30","level":"INFO","msg":"sender: started","stream_id":"ovy1cu2g"}
+{"time":"2025-07-24T08:01:39.887499+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-24T08:01:42.250491+05:30","level":"INFO","msg":"stream: closing","id":"ovy1cu2g"}
+{"time":"2025-07-24T08:01:42.250627+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-24T08:01:42.251441+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-24T08:01:44.107334+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-24T08:01:44.553976+05:30","level":"INFO","msg":"handler: closed","stream_id":"ovy1cu2g"}
+{"time":"2025-07-24T08:01:44.554036+05:30","level":"INFO","msg":"sender: closed","stream_id":"ovy1cu2g"}
+{"time":"2025-07-24T08:01:44.554038+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"ovy1cu2g"}
+{"time":"2025-07-24T08:01:44.554264+05:30","level":"INFO","msg":"stream: closed","id":"ovy1cu2g"}

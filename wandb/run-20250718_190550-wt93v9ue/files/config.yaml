@@ -1,0 +1,60 @@
+_wandb:
+    value:
+        cli_version: 0.20.1
+        m: []
+        python_version: 3.11.13
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 1
+                - 2
+                - 13
+                - 15
+                - 16
+                - 55
+            "4": 3.11.13
+            "5": 0.20.1
+            "8":
+                - 1
+                - 2
+            "12": 0.20.1
+            "13": darwin-arm64
+batch_size:
+    value: 4
+device:
+    value: mps
+embed_dim:
+    value: 1024
+epochs:
+    value: 10000
+grad_accum_steps:
+    value: 4
+learning_rate:
+    value: 0.0003
+max_lr:
+    value: 0.0003
+max_seq_length:
+    value: 512
+max_steps:
+    value: 10000
+min_lr:
+    value: 3e-06
+num_blocks:
+    value: 16
+num_experts:
+    value: 64
+num_heads:
+    value: 16
+top_k_experts:
+    value: 8
+total_parameters:
+    value: 3866561749
+trainable_parameters:
+    value: 3866561749
+vocab_size:
+    value: 50309
+warmup_steps:
+    value: 750

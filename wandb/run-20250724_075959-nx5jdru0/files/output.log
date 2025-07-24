@@ -1,0 +1,12 @@
+Found 99 shards for split train
+Found 1 shards for split val
+Traceback (most recent call last):
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 378, in <module>
+    train()
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 281, in train
+    grad_fn = value_and_grad(loss_fn, has_aux=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: value_and_grad(): incompatible function arguments. The following argument types are supported:
+    1. value_and_grad(fun: Callable, argnums: Optional[Union[int, Sequence[int]]] = None, argnames: Union[str, Sequence[str]] = []) -> Callable
+
+Invoked with types: function, kwargs = { has_aux: bool }

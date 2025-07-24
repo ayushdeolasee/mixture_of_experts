@@ -1,0 +1,12 @@
+[green]found 99 shards for split train[/green]
+[green]found 1 shards for split val[/green]
+Traceback (most recent call last):
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 494, in <module>
+    train(
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 352, in train
+    total_params = sum([np.prod(p.shape) for p in flat_params])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ayushdeolasee/Developer/mixture_of_experts/mps.py", line 352, in <listcomp>
+    total_params = sum([np.prod(p.shape) for p in flat_params])
+                                ^^^^^^^
+AttributeError: 'list' object has no attribute 'shape'
