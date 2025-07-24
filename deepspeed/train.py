@@ -28,7 +28,7 @@ else:
     device = "cpu"
 print(f"[green]Using device: {device}[/green]")
 
-BATCH_SIZE = 4
+BATCH_SIZE = 1 
 MAX_SEQ_LENGTH = 1024 
 WARMUP_STEPS = 750
 MIN_LR = 3e-6
