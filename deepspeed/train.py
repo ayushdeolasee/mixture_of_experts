@@ -20,7 +20,12 @@ logging.basicConfig(
 
 log = logging.getLogger("rich")
 
-device = "mps" if torch.backends.mps.is_available() else "cpu"
+if torch.cuda.is_available():
+    device = "cuda"
+elif torch.backends.mps.is_available():
+    device = "mps"
+else:
+    device = "cpu"
 print(f"[green]Using device: {device}[/green]")
 
 BATCH_SIZE = 4
@@ -379,8 +384,8 @@ def train(batch_size, max_seq_lenght, vocab_size, num_heads, num_experts, grad_a
         tags=["mixture-of-experts", "transformer", "moe"]
     )
     
-    train_dataloader = DataLoader(B=batch_size, T=max_seq_lenght, split="train", data_root="./data")
-    val_dataloader = DataLoader(B=batch_size, T=max_seq_lenght, split="val", data_root="./data")
+    train_dataloader = DataLoader(B=batch_size, T=max_seq_lenght, split="train", data_root="/teamspace/studios/this_studio/data")
+    val_dataloader = DataLoader(B=batch_size, T=max_seq_lenght, split="val", data_root="/teamspace/studios/this_studio/data")
 
     model = Model(vocab_size, embed_dim, max_seq_lenght, num_heads, num_experts).to(device)
     
